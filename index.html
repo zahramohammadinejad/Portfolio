@@ -12,15 +12,20 @@
 <body>
 <header class="navbar">
   <a class="brand" href="#"><span class="logo">ZM</span><span><strong>Zahra Mohammadinejad</strong><small>Business Analyst | Process Improvement | Product Owner</small></span></a>
-  <nav>
+
+  <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-navigation">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav id="main-navigation">
     <a class="active" href="#">Home</a>
     <a href="#case-studies">Portfolio</a>
     <a href="resume.html">Resume</a>
     <a href="about.html">About Me</a>
     <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
-    <a class="nav-contact" href="mailto:bzmn65@gmail.com" aria-label="Email Zahra">Email</a>
-    <a class="nav-contact" href="https://www.linkedin.com/in/Zahra-Mohammadinejad" target="_blank" rel="noopener" aria-label="LinkedIn profile">LinkedIn</a>
+    <a class="nav-contact" href="mailto:bzmn65@gmail.com">Email</a>
+    <a class="nav-contact" href="https://www.linkedin.com/in/Zahra-Mohammadinejad" target="_blank" rel="noopener">LinkedIn</a>
   </nav>
 </header>
 
@@ -86,5 +91,26 @@
 </main>
 
 <footer id="resume"><span>© 2026 Zahra Mohammadinejad</span><span>Business Analysis · Process Improvement · Product Ownership</span></footer>
+
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navigation = document.querySelector('#main-navigation');
+
+  menuToggle.addEventListener('click', () => {
+    const isOpen = navigation.classList.toggle('open');
+    menuToggle.classList.toggle('open', isOpen);
+    menuToggle.setAttribute('aria-expanded', isOpen);
+    menuToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+  });
+
+  navigation.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navigation.classList.remove('open');
+      menuToggle.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.setAttribute('aria-label', 'Open navigation menu');
+    });
+  });
+</script>
 </body>
 </html>
