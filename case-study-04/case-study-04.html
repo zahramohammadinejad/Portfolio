@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intelligent Service Request Automation | Zahra Mohammadinejad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="case-study-04.css">
+  <link rel="stylesheet" href="../responsive-nav.css?v=4">
+</head>
+<body>
+<header class="navbar">
+  <a class="brand" href="../index.html"><span class="logo">ZM</span><span><strong>Zahra Mohammadinejad</strong><small>Business Analysis | Process Improvement | Product Ownership</small></span></a>
+  <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav>
+    <a href="../index.html">Home</a><a class="active" href="#overview">Case Study</a><a href="#process">Process</a><a href="#automation">Automation</a><a href="#architecture">Solution</a><a href="#outcome">Outcome</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="overview">
+  <div class="hero-copy">
+    <p class="eyebrow">CASE STUDY 04 · PROCESS AUTOMATION</p>
+    <h1>Intelligent Service<br>Request Automation</h1>
+    <h2>Process Analysis, Automation Assessment & AI-Assisted Solution Design</h2>
+    <p class="intro">A generalized service-request transformation case study based on organizational service processes. The design combines workflow automation, selective AI, business rules, and human oversight to move requests from intake to resolution with greater consistency and visibility.</p>
+    <div class="meta-row"><span><b>Role</b> Business / Process Analyst</span><span><b>Focus</b> Automation & AI Opportunity</span><span><b>Platform</b> n8n · Conceptual</span></div>
+    <div class="status-note"><span class="status-dot"></span>Conceptual case study — solution design, not a production implementation</div>
+  </div>
+  <div class="hero-visual"><img src="assets/service-automation-architecture.svg" alt="Conceptual intelligent service request automation architecture"></div>
+</section>
+
+<section class="section context">
+  <div class="section-label"><span>01</span><p>BUSINESS CONTEXT</p></div>
+  <div class="two-col">
+    <div><h2>From fragmented requests to a controlled service flow</h2><p>Service organizations often receive requests through forms, email, messages, or internal channels. The request then moves between intake staff, departments, experts, and approvers. When coordination is mostly manual, the process becomes dependent on individual employees and difficult to monitor.</p><p>This case study redesigns that pattern as a reusable <strong>Request-to-Resolution</strong> process that can be adapted across engineering, construction, insurance, IT, HR, education, and public services.</p></div>
+    <div class="info-card"><div class="card-icon">↗</div><h3>Business Objective</h3><p>Reduce repetitive coordination, improve routing and information quality, and create transparent, measurable request handling without removing human accountability.</p></div>
+  </div>
+</section>
+
+<section class="section" id="process">
+  <div class="section-label"><span>02</span><p>AS-IS PROCESS</p></div>
+  <h2>Where manual coordination creates friction</h2>
+  <p class="section-intro">The current-state pattern is intentionally generalized. It captures common pain points without exposing organization-specific data or rules.</p>
+  <div class="diagram-frame"><img src="assets/as-is-to-be.svg" alt="As-is and to-be service request process comparison"></div>
+  <div class="pain-grid">
+    <article><span>01</span><h3>Manual validation</h3><p>Employees check whether information and documents are complete before processing can continue.</p></article>
+    <article><span>02</span><h3>Manual routing</h3><p>Requests are interpreted and forwarded to the responsible team, creating avoidable handoffs.</p></article>
+    <article><span>03</span><h3>Repeated follow-up</h3><p>Missing information, reminders, and status updates consume administrative time.</p></article>
+    <article><span>04</span><h3>Limited visibility</h3><p>Managers lack a consistent view of pending work, bottlenecks, and overdue requests.</p></article>
+  </div>
+</section>
+
+<section class="section process-section">
+  <div class="section-label"><span>03</span><p>TO-BE PROCESS</p></div>
+  <h2>Automate the predictable, interpret the ambiguous</h2>
+  <p class="section-intro">The future-state process separates deterministic workflow logic from AI-assisted interpretation and human decisions.</p>
+  <div class="flow">
+    <div class="flow-step"><span>01</span><strong>Request</strong><small>Digital intake from user or channel</small></div><b class="arrow">→</b>
+    <div class="flow-step"><span>02</span><strong>Validate</strong><small>Required fields & documents</small></div><b class="arrow">→</b>
+    <div class="flow-step ai"><span>03</span><strong>Understand</strong><small>AI classification & extraction</small></div><b class="arrow">→</b>
+    <div class="flow-step"><span>04</span><strong>Route</strong><small>Business rules & assignment</small></div><b class="arrow">→</b>
+    <div class="flow-step"><span>05</span><strong>Process</strong><small>Department task execution</small></div><b class="arrow">→</b>
+    <div class="flow-step human"><span>06</span><strong>Decide</strong><small>Human approval when required</small></div><b class="arrow">→</b>
+    <div class="flow-step"><span>07</span><strong>Close</strong><small>Notify, record & report</small></div>
+  </div>
+</section>
+
+<section class="section" id="automation">
+  <div class="section-label"><span>04</span><p>AUTOMATION VS AI</p></div>
+  <div class="two-col reverse">
+    <div><h2>Technology follows the process</h2><p>The design intentionally avoids using AI for predictable operations. Standard workflow logic is more appropriate when rules are explicit and outcomes are deterministic.</p><ul class="check-list"><li>Workflow automation for triggers, tasks, routing, reminders and status updates.</li><li>AI for unstructured language, classification, information extraction and summaries.</li><li>Human review for low-confidence, exceptional or high-impact decisions.</li></ul></div>
+    <div class="decision-card"><div class="decision-row"><span class="rule-icon">R</span><div><b>Rules / Workflow</b><small>Predictable, repeatable, explicit logic</small></div></div><div class="decision-row"><span class="ai-icon">AI</span><div><b>LLM Assistance</b><small>Interpretation of unstructured information</small></div></div><div class="decision-row"><span class="human-icon">H</span><div><b>Human Decision</b><small>Exceptions, approvals and accountability</small></div></div></div>
+  </div>
+</section>
+
+<section class="section n8n-section">
+  <div class="section-label"><span>05</span><p>PROPOSED n8n WORKFLOW</p></div>
+  <h2>Workflow orchestration concept</h2>
+  <p class="section-intro">The following diagram shows how an n8n-based workflow could coordinate the process. It is a design artifact, not a claim of an implemented workflow.</p>
+  <div class="diagram-frame dark-frame"><img src="assets/n8n-service-request-workflow.svg" alt="Conceptual n8n workflow for intelligent service request automation"></div>
+  <div class="workflow-note"><b>Why n8n?</b><span>In this design, n8n acts as the orchestration layer between the request channel, database, AI service, notifications, task management and business systems.</span></div>
+</section>
+
+<section class="section" id="architecture">
+  <div class="section-label"><span>06</span><p>SOLUTION ARCHITECTURE</p></div>
+  <h2>Modular architecture for future growth</h2>
+  <div class="architecture-grid">
+    <article><div class="arch-icon">01</div><h3>Experience</h3><p>Web form, portal, email or other approved request channel.</p></article>
+    <article><div class="arch-icon">02</div><h3>Orchestration</h3><p>n8n coordinates workflow execution, integrations and process state.</p></article>
+    <article><div class="arch-icon">03</div><h3>Intelligence</h3><p>LLM supports classification, extraction, summaries and exception signals.</p></article>
+    <article><div class="arch-icon">04</div><h3>Data & Knowledge</h3><p>Structured request records plus approved policies and service knowledge.</p></article>
+    <article><div class="arch-icon">05</div><h3>Human Control</h3><p>Review and approval remain available for sensitive or uncertain cases.</p></article>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-label"><span>07</span><p>DATA MODEL</p></div>
+  <h2>Minimum information needed to manage the process</h2>
+  <div class="data-grid">
+    <div><b>Request</b><span>ID · Type · Description · Status · Priority · Dates</span></div>
+    <div><b>Requester</b><span>ID · Name · Contact · Organization</span></div>
+    <div><b>Task</b><span>Department · Assignee · Due date · Status</span></div>
+    <div><b>AI Result</b><span>Classification · Extracted data · Confidence · Review flag</span></div>
+  </div>
+</section>
+
+<section class="section" id="outcome">
+  <div class="section-label"><span>08</span><p>KPIs & BUSINESS VALUE</p></div>
+  <div class="outcome-box"><div><p class="eyebrow">WHAT SHOULD IMPROVE?</p><h2>Measure the process, not just the automation</h2><p>Success should be evaluated through business outcomes rather than the number of automated steps.</p></div><div class="kpi-grid"><div><b>Cycle Time</b><span>Average request processing time</span></div><div><b>Automation Rate</b><span>Eligible activities completed automatically</span></div><div><b>Routing Accuracy</b><span>Requests reaching the right team</span></div><div><b>Manual Intervention</b><span>Cases requiring human handling</span></div><div><b>Overdue Rate</b><span>Requests exceeding target time</span></div><div><b>First Response</b><span>Time to initial acknowledgement</span></div></div></div>
+</section>
+
+<section class="section">
+  <div class="section-label"><span>09</span><p>RISKS & CONTROLS</p></div>
+  <div class="risk-table">
+    <div class="risk-head"><span>Risk</span><span>Control</span></div>
+    <div><span>Incorrect AI classification</span><span>Validation, confidence threshold and human review</span></div>
+    <div><span>Missing or poor-quality input</span><span>Required-field validation and clarification loop</span></div>
+    <div><span>Integration failure</span><span>Retries, error handling and operational alerts</span></div>
+    <div><span>Over-automation</span><span>Human approval for exceptions and high-impact decisions</span></div>
+    <div><span>Sensitive information exposure</span><span>Access control, secure handling and retention rules</span></div>
+  </div>
+</section>
+
+<section class="section maturity">
+  <div class="section-label"><span>10</span><p>MATURITY ROADMAP</p></div>
+  <h2>From workflow automation to intelligent process execution</h2>
+  <div class="maturity-line"><div><b>01</b><strong>Manual</strong><span>Human coordination</span></div><i>→</i><div><b>02</b><strong>Automated</strong><span>Rules + workflows</span></div><i>→</i><div><b>03</b><strong>AI-Assisted</strong><span>LLM + workflow</span></div><i>→</i><div><b>04</b><strong>Knowledge-Aware</strong><span>Policies + data</span></div><i>→</i><div><b>05</b><strong>Agentic</strong><span>Dynamic reasoning + tools</span></div></div>
+</section>
+
+<section class="section contribution">
+  <div class="section-label"><span>11</span><p>MY BA / PROCESS ANALYST CONTRIBUTION</p></div>
+  <div class="contribution-grid"><article><b>Analyze</b><span>As-Is process, actors, pain points and bottlenecks</span></article><article><b>Design</b><span>To-Be flow, rules, exceptions and human controls</span></article><article><b>Assess</b><span>Automation and AI opportunities with clear boundaries</span></article><article><b>Define</b><span>Data requirements, KPIs, risks and implementation roadmap</span></article></div>
+</section>
+
+<section class="section conclusion">
+  <div class="conclusion-box"><p class="eyebrow">FINAL TAKEAWAY</p><h2>Intelligent automation starts with good process design.</h2><p>The value of this solution is not simply adding an AI model to a workflow. It is designing a controlled process where predictable work is automated, unstructured information is interpreted with AI, and important decisions remain accountable to people.</p></div>
+</section>
+
+<section class="next"><a href="../case-study-03/case-study-03.html">← Previous Case Study</a><a class="home-link" href="../index.html">Back to Portfolio <span>→</span></a></section>
+</main>
+<footer><span>© 2026 Zahra Mohammadinejad</span><span>Business Analysis · Process Improvement · Product Ownership</span></footer>
+<script src="../responsive-nav.js?v=4"></script>
+</body>
+</html>
